@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8</title>
+    <script src="./index.js" defer></script>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f7f7f7, #eceff8);
+      }
+
+      .app {
+        width: min(720px, calc(100% - 32px));
+        padding: 24px;
+        border-radius: 20px;
+        background: white;
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.12);
+      }
+
+      #character-list {
+        width: 100%;
+        padding: 12px 14px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        border: 1px solid #cbd5e1;
+        font-size: 16px;
+      }
+
+      .viewer {
+        min-height: 360px;
+        display: grid;
+        place-items: center;
+        border-radius: 18px;
+        background: linear-gradient(180deg, #1f2937, #111827);
+      }
+
+      .character-image {
+        max-width: 100%;
+        max-height: 360px;
+        object-fit: contain;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="app">
+      <select id="character-list"></select>
+      <div class="viewer">
+        <img class="character-image" alt="Character image" />
+      </div>
+    </section>
+  </body>
+</html>
